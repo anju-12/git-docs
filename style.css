@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-width: 290px;
+    font-size: 18px;
+    color: #271f64;
+    line-height: 1.5rem;
+    font-family: 'Noto Serif';
+    text-rendering: optimizeLegibility;
+}
+
+p, #main-doc li, td {
+    font-style: italic;
+}
+
+h2 {
+    color: #2A3D66;
+    margin-top: 10px;
+}
+
+header {
+    margin: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #2A3D66;
+}
+
+.heading {
+    position: fixed;
+    background-color:  #2A3D66;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+}
+
+.title {
+    color: #FFF;
+    padding: 20px;
+    font-size: 40px;
+    font-family: Asap;
+    letter-spacing: 0.4rem;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin: 10px 0;
+}
+
+#border {
+    padding: 8px 0;
+    background: linear-gradient(139deg, #fb8817, #ff4b01, #c12127);
+    position: fixed;
+    top: 70px;
+    width: 100%;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0;
+    left: 0;
+    margin-top: 85px;
+    width: 350px;  
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+    font-size: 28px;
+    border-bottom: 1px solid #C1C3D1;
+    border-right: 1px solid #C1C3D1;
+}
+
+#navbar a {
+    display: block;
+    padding: 20px 30px;
+    color: #2A3D66;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar li:hover {
+    background: #2A3D66;
+}
+
+#navbar a:hover {
+    color: #fff;
+}
+
+#main-doc {
+    position: relative;
+    margin-left: 400px;
+    top: 60px;
+    margin-bottom: 100px;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+    margin-left: 15px;
+}
+
+section {
+    margin-top: 50px;
+}
+
+section div,section ul{
+    margin: 20px;
+}
+
+#Git_Terminologies li, #Git_Commands li {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#Git_Terminologies ul p {
+    margin-bottom: 20px;
+}
+
+#Git_Commands ul li {
+    margin-top: 20px;
+}
+
+table {
+    background: white;
+    border-radius:5px;
+    border-collapse: collapse;
+    margin-top: 50px;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.212);
+    animation: float 5s infinite;
+}
+
+th {
+    color:#D5DDE5;;
+    background:#2A3D66;
+    border-bottom:4px solid #9ea7af;
+    font-size: 140%;
+    padding:24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+th:first-child {
+    border-top-left-radius:5px;
+}
+   
+th:last-child {
+    border-top-right-radius:5px;
+    border-right:none;
+}
+
+tr {
+    border-top: 1px solid #C1C3D1;
+    border-bottom: 1px solid #C1C3D1;
+    color:#2A3D66;
+}
+
+tr td:first-child {
+    border-right: 1px solid #C1C3D1;
+}
+
+td {
+    padding: 10px;
+}
+
+.code {
+    background: #2A3D66;
+    color: #fff;
+    border-radius: 5px;
+    width: 70%;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+#Reference a {
+    text-decoration: none;
+}
+
+/* _________FOOTER__________ */
+
+footer {
+    background-color: #2A3D66;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    /* float: right; */
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 170%;
+}
+
+.fb:hover {
+    color: #3b5998;
+}
+.twitter:hover {
+    color: #00aced;
+}
+.github:hover {
+    color: #fff;
+}
+.ig:hover {
+    color: #E1306C;
+}
+
+footer p {
+    color: #fff;
+}

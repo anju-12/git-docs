@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Git Documentation</title>
+</head>
+<body>
+    <div class="heading">
+        <img src="/Resource/Git.png" class="logo" alt="logo of git">
+        <div class="title">GIT HANDBOOK</div>
+        <img src="/Resource/github-logo.png" class="logo" alt="logo of github">
+    </div>
+    <div id="border"></div>
+
+    <nav id="navbar">
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#What_Is_GitHub?">What is GitHub?</a></li>
+            <li><a class="nav-link" href="#Git_Vs_GitHub">Git Vs GitHub</a></li>
+            <li><a class="nav-link" href="#Git_Terminologies">Git Terminologies</a></li>
+            <li><a class="nav-link" href="#Git_Commands">Git Commands</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header><h1>Introduction</h1></header>
+            <div>
+                <p>Git is a modern and widely used <b>disributed version control system</b> in the world. It is developed to manage projects with high speed and efficiency. The version control system allow us to monitor and work together with our team members at the same workspace.</p>
+
+                <p>Git is foundation of many services like <b>GitHub</b> and <b>GitLab</b>, but we can use Git without using any other Git services. Git can be used <b>privately</b> and <b>publicly</b></p>
+
+                <h2>Features Of Git</h2>
+                <ul>
+                    <li>Open Source</li>
+                    <li>Scalable</li>
+                    <li>Distributed</li>
+                    <li>Security</li>
+                    <li>Speed</li>
+                    <li>Support Non-linear Development</li>
+                    <li>Branching & Merging</li>
+                    <li>Data Assurance</li>
+                    <li>Staging Area</li>
+                    <li>Maintain The Clean History</li>
+                </ul>
+            </div>
+        </section>
+        <section class="main-section" id="What_Is_GitHub?">
+            <header><h1>What Is GitHub?</h1></header>
+            <div>
+                <p>GitHub is a Git repository hosting service. GitHub also facilitates with many of its features, such as access control and collaboration.It provides a Web-based graphical interface.</p>
+                <p>It offers both <b>distributed version control system & source code management</b> functionality of Git. It also facilitates with some collaboration feature such as bug tracking, feature requests, task management for every project.</p>
+                <p>GitHub is an American Company. It hosts source code of your project in the form of different programmig languages and keep track of the various changes made by programmers.</p>
+
+                <h2>Features Of GitHub</h2>
+                <ul>
+                    <li>Collaboration</li>
+                    <li>Integrated Issue & Bug Tracking</li>
+                    <li>Graphical Representation of Branches</li>
+                    <li>Git Repositories Hosting</li>
+                    <li>Project Management</li>
+                    <li>Team Management</li>
+                    <li>Code Hosting</li>
+                    <li>Track & Assign Tasks</li>
+                    <li>Conversations</li>
+                </ul>
+            </div>
+        </section>
+        <section class="main-section" id="Git_Vs_GitHub">
+            <header><h1>Git Vs GitHub</h1></header>
+            <div>
+            <table>
+                <tr>
+                    <th>Git</th>
+                    <th>GitHub</th>
+                </tr>
+                <tr>
+                    <td>Git is a distributed version control tool that can manage a programmer's source code history.</td>
+                    <td>GitHub is a cloud based tool developed around the Git tool.</td>
+                </tr>
+                <tr>
+                    <td>A developer installs Git tool locally.</td>
+                    <td>GitHub is an online service to store code and push from the computer running the Git tool.</td>
+                </tr>
+                <tr>
+                    <td>Git focused on version control and code sharing.</td>
+                    <td>GitHub focused on centralized source code hosting.</td>
+                </tr>
+                <tr>
+                    <td>It is a command line tool.</td>
+                    <td>It is administered through the web.</td>
+                </tr>
+                <tr>
+                    <td>It facilitates with a desktop interface called Git Gui.</td>
+                    <td>It also facilitates with a desktop interface called GitHub Gui.</td>
+                </tr>
+                <tr>
+                    <td>It doesn't provide any user management feature.</td>
+                    <td>It has a built-in user management feature.</td>
+                </tr>
+                <tr>
+                    <td>It has minimal tool configuration feature.</td>
+                    <td>It has a market place for tool configuration.</td>
+                </tr>
+            </table>
+        </div>
+
+        </section>
+        <section class="main-section" id="Git_Terminologies">
+            <header><h1>Git Terminologies</h1></header>
+            <div>
+            <p>Git is a tool that covered vast terminology and jargon, which can often be difficult for new users, or those who know Git basics but want to become Git masters. So, we need a little explanation of the terminology behind the tools.</p>
+            <h3>Some commonly used terms are:</h3>
+            <ul>
+                <li>Branch</li>
+                <p>A branch is a version of the repository that diverges from the main working project. A Git project can have more than one branch. We can perform many operations on Git branch-like rename, list, delete, etc.</p>
+
+                <li>Checkout</li>
+                <p>In Git, the term checkout is used for the act of switching between different versions of a target entity. The git checkout command is used to switch between branches in a repository.</p>
+
+                <li>Cherry-Picking</li>
+                <p>Cherry-picking in Git is meant to apply some commit from one branch into another branch. In case you made a mistake and committed a change into the wrong branch, but do not want to merge the whole branch. You can revert the commit and cherry-pick it on another branch.</p>
+
+                <li>Clone</li>
+                <p>The git clone is a Git command-line utility. It is used to make a copy of the target repository or clone it.</p>
+
+                <li>Fetch</li>
+                <p>It is used to fetch branches and tags from one or more other repositories, along with the objects necessary to complete their histories. It updates the remote-tracking branches.</p>
+
+                <li>HEAD</li>
+                <P>HEAD is the representation of the last commit in the current checkout branch. We can think of the head like a current branch. When you switch branches with git checkout, the HEAD revision changes, and points the new branch.</P>
+
+                <li>Index</li>
+                <p>The Git index is a staging area between the working directory and repository. It is used as the index to build up a set of changes that you want to commit together.</p>
+
+                <li>Master</li>
+                <p>Master is a naming convention for Git branch. It's a default branch of Git.</p>
+
+                <li>Merge</li>
+                <p>Merging is a process to put a forked history back together. The git merge command facilitates you to take the data created by git branch and integrate them into a single branch.</p>
+
+                <li>Origin</li>
+                <p>In Git, "origin" is a reference to the remote repository from a project was initially cloned. More precisely, it is used instead of that original repository URL to make referencing much easier.</p>
+
+                <li>Pull</li>
+                <p>The term Pull is used to receive data from remote repository. It fetches and merges changes on the remote server to your working directory. The git pull command is used to make a Git pull.</p>
+
+                <li>Pull Request</li>
+                <p>Pull requests are a process for a developer to notify team members that they have completed a feature. Once their feature branch is ready, the developer files a pull request via their remote server account. Pull request announces all the team members that they need to review the code and merge it into the master branch.</p>
+
+                <li>Push</li>
+                <p>The push term refers to upload local repository content to a remote repository. Pushing is an act of transfer commits from your local repository to a remote repository. Pushing is capable of overwriting changes; caution should be taken when pushing.</p>
+
+                <li>Rebase</li>
+                <p>In Git, the term rebase is referred to as the process of moving or combining a sequence of commits to a new base commit.</p>
+
+                <li>Remote</li>
+                <p>In Git, the term remote is concerned with the remote repository. It is a shared repository that all team members use to exchange their changes. A remote repository is stored on a code hosting service like an internal server, GitHub, Subversion and more.</p>
+
+                <li>Repository</li>
+                <p>In Git, Repository is like a data structure used by VCS to store metadata for a set of files and directories. It contains the collection of the file as well as the history of changes made to those files. </p>
+
+                <li>Stashing</li>
+                <p>Sometimes you want to switch the branches, but you are working on an incomplete part of your current project. You don't want to make a commit of half-done work. Git stashing allows you to do so. The git stash command enables you to switch branch without committing the current branch.</p>
+
+                <li>Upstream And Downstream</li>
+                <p>The term upstream and downstream is a reference of the repository. Generally, upstream is where you cloned the repository from (the origin) and downstream is any project that integrates your work with other works.</p>
+
+                <li>Git Revert</li>
+                <p>In Git, the term revert is used to revert some commit. To revert a commit, git revert command is used. It is an undo type command.</p>
+
+                <li>Git Reset</li>
+                <p>In Git, the term reset stands for undoing changes. The git reset command is used to reset the changes.</p>
+
+                <li>Git Ignore</li>
+                <p>In Git, the term ignore used to specify intentionally untracked files that Git should ignore. It doesn't affect the Files that already tracked by Git.</p>
+
+                <li>Git Squash</li>
+                <p>In Git, the term squash is used to squash previous commits into one. Git squash is an excellent technique to group-specific changes before forwarding them to others. You can merge several commits into a single commit with the powerful interactive rebase command.</p>
+            </ul>
+        </div>
+        </section>
+        <section class="main-section" id="Git_Commands">
+            <header><h1>Git Commands</h1></header>
+            <div>
+            <p>There are many different ways to use Git. Git supports many command-line tools & graphical user interfaces. The Git command line is the only space where you can run all the Git commands.</p>
+            <p>Here is a list of some essential Git commands that are used daily.</p>
+            <ul>
+                <li>Git Config Command</li>
+                <p>This command configures the user. The Git config command is the first and necessary command used on the Git command line. This command sets the author name and email address to be used with your commits. Git config is also used in other scenarios.</p>
+                <div class="code">
+                    <code>
+                        $ git config --global user.name "ImDwivedi1"<br>
+                        $ git config --global user.email "Himanshudubey481@gmail.com"
+                    </code>
+                </div>
+
+                <li>Git init Command</li>
+                <p>This command is used to create a local repository.</p>
+                <div class="code">
+                    <code>
+                        $ git init Demo
+                    </code>
+                </div>
+
+                <li>Git clone Command</li>
+                <p>This command is used to make a copy of a repository from an existing URL. If I want a local copy of my repository from GitHub, this command allows creating a local copy of that repository on your local directory from the repository URL.</p>
+                <div class="code">
+                    <code>
+                        $ git clone URL 
+                    </code>
+                </div>
+
+                <li>Git add Command</li>
+                <p>This command is used to add one or more files to staging (Index) area.</p>
+                <div class="code">
+                    <code>
+                        $ git add Filename<br>
+                        $ git add .
+                    </code>
+                </div>
+                
+                <li>Git commit Command</li>
+                <p>This command changes the head. It records or snapshots the file permanently in the version history with a message.</p>
+                <div class="code">
+                    <code>
+                        $ git commit -m " Commit Message"  
+                    </code>
+                </div>
+                
+                <li>Git status Command</li>
+                <p>The status command is used to display the state of the working directory and the staging area. It allows you to see which changes have been staged, which haven't, and which files aren?t being tracked by Git.</p>
+                <div class="code">
+                    <code>
+                        $ git status
+                    </code>
+                </div>
+                
+                <li>Git push Command</li>
+                <p>It is used to upload local repository content to a remote repository. Pushing is an act of transfer commits from your local repository to a remote repository.</p>
+                <div class="code">
+                    <code>
+                        $ git push origin master  
+                    </code>
+                </div>
+                
+                <li>Git Pull Command</li>
+                <p>Pull command is used to receive data from remote repository. It fetches and merges changes on the remote server to your working directory.</p>
+                <div class="code">
+                    <code>
+                        $ git pull origin master
+                    </code>
+                </div>
+                
+                <li>Git Branch Command</li>
+                <p>This command lists all the branches available in the repository.</p>
+                <div class="code">
+                    <code>
+                        $ git branch 
+                    </code>
+                </div>
+                
+                <li>Git Merge Command</li>
+                <p>This command is used to merge the specified branch?s history into the current branch.</p>
+                <div class="code">
+                    <code>
+                        $ git merge origin/BranchName  
+                    </code>
+                </div>
+                
+                <li>Git log Command</li>
+                <p>This command is used to check the commit history.</p>
+                <div class="code">
+                    <code>
+                        $ git log  
+                    </code>
+                </div>
+            </ul>
+        </div>
+        </section>
+        <section class="main-section" id="Reference">
+            <header><h1>Reference</h1></header>
+            <div>
+                All the documentation in this page is taken from <a href="https://www.javatpoint.com/git"><b>Javatpoint</b></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="row">
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/profile.php?id=100027292025136" ><ion-icon class="fb" name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://twitter.com/im_anju12"><ion-icon class="twitter" name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://github.com/anju-12"><ion-icon class="github" name="logo-github"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/im.anju_12/"><ion-icon class="ig" name="logo-instagram"></ion-icon></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <p>
+                Designed & Created by Anju.
+            </p>
+        </div>
+    </footer> 
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+</html>
